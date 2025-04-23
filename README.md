@@ -1,14 +1,32 @@
-# 🤟 AI Sign Language Interpreter
-
-A machine learning-based system to recognize and interpret American Sign Language (ASL) gestures using real-time computer vision. This project was developed as part of an academic research initiative at Binus University, combining Python, MediaPipe, and a Random Forest model.
+✋ AI Sign Language Interpreter
+A real-time sign language recognition system built with Python, Computer Vision, and Machine Learning.
+This project aims to support the deaf and hard-of-hearing community by translating American Sign Language (ASL) hand gestures into text using a webcam.
 
 ---
 
-## 📌 Features
+📌 Key Features
+Detects 27 unique ASL hand signs
+Achieved 100% accuracy using a manually collected dataset (2,700 images)
+Real-time gesture detection with webcam input
+Utilizes MediaPipe for hand landmark detection and Random Forest classifier for prediction
 
-- 🖐️ Detects 27 ASL hand gestures using webcam input
-- 🎯 Achieves 100% accuracy on a custom-built dataset (2,700 images)
-- ⚙️ Powered by MediaPipe for landmark extraction and Random Forest Classifier for gesture recognition
-- 📷 Real-time detection and feedback
-- 🧪 Modular Jupyter Notebooks: from data collection to model testing
+---
+
+⚠️ Important Note
+The dataset was collected under ideal conditions (consistent lighting, background, and hand orientation).
+As a result, the model overfits the data and may not generalize well in real-world scenarios. Future improvements include adding data augmentation and testing in varied environments.
+
+🛠️ Tech Stack
+Python
+OpenCV
+MediaPipe
+Scikit-learn
+Jupyter Notebook
+
+---
+
+📂 Dataset
+2,700 hand gesture images
+27 classes (100 images/class)
+Captured manually for clarity and consistency
 
