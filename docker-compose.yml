@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  signlang-app:
+    build: .
+    container_name: signlang-interpreter
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/app
+    command: >
+      jupyter notebook --ip=0.0.0.0 --allow-root
+      --NotebookApp.token='' 
+      --NotebookApp.password=''
+      --NotebookApp.disable_check_xsrf=True
